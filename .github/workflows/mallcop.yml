@@ -1,0 +1,38 @@
+name: Mallcop Security Scan
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - '.mallcop/dispatch/**'
+      - '.mallcop/config.yaml'
+
+concurrency:
+  group: mallcop-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'mallcop~=0.5'
+      - name: Run mallcop
+        env:
+          MALLCOP_SERVICE_TOKEN: ${{ secrets.MALLCOP_SERVICE_TOKEN }}
+          MALLCOP_INFERENCE_URL: https://mallcop.app/api/inference
+        run: |
+          mallcop scan
+          mallcop detect
+          mallcop escalate
+      - name: Commit results
+        run: |
+          git config user.name "mallcop[bot]"
+          git config user.email "mallcop[bot]@users.noreply.github.com"
+          git add .mallcop/
+          git diff --staged --quiet || git commit -m "mallcop: scan results $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push

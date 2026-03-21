@@ -44,3 +44,4 @@
 {"human_action":"agree","finding_id":"e2e-finding-003","timestamp":"2026-03-21T09:12:40.275Z","new_status":"acked"}
 {"human_action":"override","finding_id":"e2e-finding-003","timestamp":"2026-03-21T09:12:47.155Z","reason":"reopened","new_status":"open"}
 {"human_action":"agree","finding_id":"e2e-finding-003","timestamp":"2026-03-21T09:13:15.735Z","new_status":"acked"}
+{"human_action":"agree","finding_id":"e2e-finding-002","timestamp":"2026-03-21T09:13:22.318Z","new_status":"acked"}

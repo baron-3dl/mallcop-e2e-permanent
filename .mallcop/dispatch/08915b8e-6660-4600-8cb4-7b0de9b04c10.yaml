@@ -1,0 +1,5 @@
+action: investigate
+finding_id: 'e2e-finding-002'
+operation_type: investigation
+requested_by: 'mallcop-e2e-bot@users.noreply.github.com'
+requested_at: '2026-03-21T22:18:19.758Z'

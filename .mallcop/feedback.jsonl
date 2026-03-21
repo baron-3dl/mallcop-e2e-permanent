@@ -1,2 +1,3 @@
 {"human_action":"agree","finding_id":"e2e-finding-003","timestamp":"2026-03-21T05:56:13.045Z","new_status":"acked"}
 {"human_action":"agree","finding_id":"e2e-finding-002","timestamp":"2026-03-21T05:56:47.459Z","new_status":"acked"}
+{"human_action":"override","finding_id":"e2e-finding-003","timestamp":"2026-03-21T05:57:20.908Z","reason":"reopened","new_status":"open"}

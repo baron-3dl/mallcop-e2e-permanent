@@ -22,3 +22,4 @@
 {"human_action":"agree","finding_id":"e2e-finding-003","timestamp":"2026-03-21T08:49:15.613Z","new_status":"acked"}
 {"human_action":"override","finding_id":"e2e-finding-003","timestamp":"2026-03-21T08:50:27.589Z","reason":"reopened","new_status":"open"}
 {"human_action":"agree","finding_id":"e2e-finding-003","timestamp":"2026-03-21T08:51:45.492Z","new_status":"acked"}
+{"human_action":"override","finding_id":"e2e-finding-003","timestamp":"2026-03-21T08:52:57.568Z","reason":"reopened","new_status":"open"}

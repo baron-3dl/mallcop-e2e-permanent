@@ -2,3 +2,4 @@
 {"human_action":"agree","finding_id":"e2e-finding-002","timestamp":"2026-03-21T06:11:42.402Z","new_status":"acked"}
 {"human_action":"override","finding_id":"e2e-finding-003","timestamp":"2026-03-21T06:11:44.433Z","reason":"reopened","new_status":"open"}
 {"human_action":"agree","finding_id":"e2e-finding-003","timestamp":"2026-03-21T07:20:49.421Z","new_status":"acked"}
+{"human_action":"agree","finding_id":"e2e-finding-001","timestamp":"2026-03-21T07:20:57.846Z","new_status":"acked"}

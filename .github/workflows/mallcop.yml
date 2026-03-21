@@ -1,0 +1,14 @@
+name: mallcop
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run mallcop
+        run: echo "e2e placeholder scan"

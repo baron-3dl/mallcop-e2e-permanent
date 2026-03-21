@@ -1,0 +1,4 @@
+# .mallcop/config.yaml — permanent e2e test repo
+version: '1'
+connectors:
+  github: {}
